@@ -4,7 +4,7 @@ import { BsFacebook, BsEnvelopePaper } from "react-icons/bs";
 
 function Contact() {
   return (
-    <section className="footer">
+    <section className="footer" id="contact">
       <article className="footer-box">
         <h4>Contact Me</h4>
         <h5>Wynson Carl Nacalaban</h5>
