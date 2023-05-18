@@ -1,0 +1,74 @@
+.popUp-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.blurr {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  filter: blur(500px);
+}
+
+.popUp-container-hide {
+  display: none;
+}
+
+.popUp-card {
+  width: 500px;
+  min-height: 600px;
+  border: 2px solid black;
+  margin: 15px;
+  background-color: #e8e8e8;
+  border-radius: 30px;
+  box-shadow: 0 6px black;
+  padding: 25px;
+  position: relative;
+  text-align: center;
+}
+
+.popUp-card .close-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  padding: 5px 10px;
+  border: 2px solid black;
+  border-radius: 100%;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 3px black;
+}
+
+.popUp-card span {
+  font-weight: 600;
+}
+
+.popUp-card h2 {
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.popUp-card h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.popUp-card p {
+  font-size: 18px;
+  margin: -35px 0 30px;
+  text-align: left;
+}
+
+.space {
+  margin-left: 30px;
+}

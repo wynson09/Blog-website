@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "Title": "How to Make a Delicious Smoothie",
+    "Author": "Jane Doe",
+    "Date": "2023-03-01",
+    "Content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nulla illum nesciunt culpa, animi ipsum vitae quis repudiandae consequatur delectus, explicabo obcaecati, minus impedit rem reiciendis vero veniam provident quae!"
+  },
+  {
+    "id": "2",
+    "Title": "The Benefits of Running Every Day",
+    "Author": "John Smith",
+    "Date": "2023-04-01",
+    "Content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nulla illum nesciunt culpa, animi ipsum vitae quis repudiandae consequatur delectus, explicabo obcaecati, minus impedit rem reiciendis vero veniam provident quae!"
+  },
+  {
+    "id": "3",
+    "Title": "10 Tips for Traveling on a Budget",
+    "Author": "Jem Laguda",
+    "Date": "2023-04-26",
+    "Content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nulla illum nesciunt culpa, animi ipsum vitae quis repudiandae consequatur delectus, explicabo obcaecati, minus impedit rem reiciendis vero veniam provident quae!"
+  }
+]

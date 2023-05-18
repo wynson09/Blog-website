@@ -1,0 +1,89 @@
+.blog-container {
+  scroll-margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  margin: 100px 0;
+}
+
+.blog-container h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.blog-container h4 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 80px;
+}
+
+.card-container {
+  max-width: 1024px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.empty-container {
+  height: 500px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.empty-container h3 {
+  margin-top: 100px;
+}
+
+.blog-box {
+  position: relative;
+}
+
+.blogCard {
+  position: relative;
+  width: 300px;
+  border: 2px solid black;
+  border-radius: 25px;
+  height: auto;
+  min-height: 450px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0px 5px black;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.blog-title {
+  font-size: 25px;
+  margin-top: 40px;
+}
+
+.blog-author {
+  margin-top: 15px;
+}
+
+.blog-author span {
+  font-weight: 600;
+}
+
+.blog-content {
+  margin-top: 20px;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 15px;
+  gap: 20px;
+}
+
+.popUp {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
