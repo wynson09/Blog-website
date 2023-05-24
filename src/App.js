@@ -3,7 +3,7 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Blog from "./components/Blog/Blog";
 import Contact from "./components/Contact/Contact";
-import { useState } from "react";
+import { useState, useCallback, useMemo } from "react";
 import BlogPost from "./components/data/dbBlog.json";
 import { v4 as uuidv4 } from "uuid";
 
@@ -57,10 +57,19 @@ function App() {
     setContent("");
   };
 
-  const handleDelete = (id) => {
+  /*=================== Change as useCallback ====================*/
+  const handleDelete = useCallback(
+    (id) => {
+      const blogList = blogPost.filter((item) => item.id !== id);
+      setBlogPost(blogList);
+    },
+    [blogPost]
+  );
+
+  /* const handleDelete = (id) => {
     const blogList = blogPost.filter((item) => item.id !== id);
     setBlogPost(blogList);
-  };
+  }; */
 
   const handleEdit = (id, Title, Author, Date, Content) => {
     setEditId(id);
@@ -69,6 +78,11 @@ function App() {
     setDate(Date);
     setContent(Content);
   };
+
+  /* ==================== by using useMemo ================ */
+  const handleFilter = useMemo(() => {
+    return blogPost.filter((data) => data?.Date?.includes(filter));
+  }, [blogPost, filter]);
 
   return (
     <div>
@@ -86,7 +100,7 @@ function App() {
         editId={editId}
       />
       <Blog
-        blogPost={blogPost.filter((data) => data?.Date?.includes(filter))}
+        blogPost={handleFilter}
         handleDelete={handleDelete}
         handleEdit={handleEdit}
         filter={filter}

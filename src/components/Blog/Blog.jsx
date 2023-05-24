@@ -84,7 +84,9 @@ function Blog({ blogPost, handleDelete, handleEdit, filter, setFilter }) {
                     <button type="delete">
                       <span
                         className="button_top"
-                        onClick={() => handleDelete(blog?.id)}
+                        onClick={() => {
+                          handleDelete(blog?.id);
+                        }}
                       >
                         Delete
                       </span>
